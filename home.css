@@ -14,8 +14,8 @@ a {
 header{
     max-width: 1600px;
     width: 100%;
-    height: 800px;
-    background-color: #2f2f2f;
+    height: 800px;  
+    background: #2f2f2f no-repeat url(images/background\ image.png)right;
 }
 
 .navbar{
@@ -23,16 +23,17 @@ header{
     height: 79px;
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    
 }
-.nav-logo h1{
-    padding-top: 5px;
-    color: rgba(255, 255, 255, 0.42);   
+.nav-logo img{
+    color: rgba(255, 255, 255, 0.42);  
+    padding: 20px 0; 
 }
 
 .nav-link {
     display: flex;
     gap: 40px;
+    padding: 15px 0;
 }
 .nav-link ul {
     display: flex;
@@ -49,12 +50,63 @@ header{
     padding-top: 30px;
     color: #fff;
 }
-.nav-link button{
+.nav-link button , .main-card button {
     padding: 15px 30px;
     color: #fff;
     background-color: #F59B00;
     border-radius: 5px;
     border: 1px solid #333;
     cursor: pointer;
+}
+
+        /* MAIN */
+main{
+    max-width: 100%;
+    height: 721px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: no-repeat url(images/Cta.png)bottom 21% left 33%;
+}
+.main-card{
+    max-width: 100%;
+    width: 445px;
+    height: 385px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 120px;
+    position: relative;
+}
+.main-card h3 {
+    color: #F59B00;
+}
+.main-card h1 {
+    width: 411px;
+    height: 158px;
+    font-size: 61px;
+    color: #fff;
+    position:relative;
+}
+.main-card h1 img {
+    position: absolute;
+    bottom: 14px;
+    left: 100px;
+}
+.main-card p {
+    line-height: 25.6px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-card button{
+    width: 140px;
+}
+
+.main-img img{
+    max-width: 100%;
+    width: 620px;
+    height: 714px;
+    object-fit: cover;
+    object-position: center ;
 }
 
