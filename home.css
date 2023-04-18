@@ -12,10 +12,11 @@ a {
         /* *Navbar* */
 
 header{
-    max-width: 1600px;
+    max-width:1600px ;
     width: 100%;
-    height: 800px;  
-    background: #2f2f2f no-repeat url(images/background\ image.png)right;
+    height: 730px;  
+    z-index: -10;
+    background: #2f2f2f no-repeat url(images/background\ image.png) right;
 }
 
 .navbar{
@@ -23,7 +24,6 @@ header{
     height: 79px;
     display: flex;
     justify-content: space-around;
-    
 }
 .nav-logo img{
     color: rgba(255, 255, 255, 0.42);  
@@ -61,29 +61,33 @@ header{
 
         /* MAIN */
 main{
-    max-width: 100%;
-    height: 721px;
+    max-width:100%;
+    width: 1132px;
+    height: 653px;
     position: relative;
     display: flex;
-    justify-content: center;
-    background: no-repeat url(images/Cta.png)bottom 21% left 33%;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: no-repeat url(images/Cta.png)bottom 10% left 33%;
 }
 .main-card{
-    max-width: 100%;
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
     height: 385px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 120px;
-    position: relative;
+    position: absolute;
+    left: 3%;
+    z-index: 2;
 }
 .main-card h3 {
     color: #F59B00;
 }
 .main-card h1 {
-    width: 411px;
+    max-width: 411px;
+    width: 100%;
     height: 158px;
     font-size: 61px;
     color: #fff;
@@ -101,12 +105,12 @@ main{
 .main-card button{
     width: 140px;
 }
-
 .main-img img{
-    max-width: 100%;
-    width: 620px;
+    max-width: 620px;
+    width: 100%;
     height: 714px;
-    object-fit: cover;
-    object-position: center ;
+    position: absolute;
+    z-index: 1;
+    right: 1%;
 }
 
